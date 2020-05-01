@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  latest:
+    build: ./py37
+    image: ftopal/machine-learning:latest
+  py37:
+    build: ./py37
+    image: ftopal/machine-learning:py37
+  py37-cuda10.2:
+    build: ./py37-cuda10.2
+    image: ftopal/machine-learning:py37-cuda10.2

@@ -1,0 +1,22 @@
+dist: xenial
+
+language: python
+
+python:
+  - "3.7"
+
+services:
+  docker
+
+install:
+  - pip install flake8
+
+script:
+  - flake8
+  - chmod +x ./deployment/build-push-docker.sh
+
+deploy:
+  provider: script
+  script: ./deployment/build-push-docker.sh
+  on:
+    branch: master
