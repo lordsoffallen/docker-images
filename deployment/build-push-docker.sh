@@ -11,6 +11,4 @@ docker run --rm ftopal/machine-learning:latest
 
 docker run --rm ftopal/machine-learning:py37
 
-docker run --rm ftopal/machine-learning:py37-cuda10.2
-
 docker-compose push
