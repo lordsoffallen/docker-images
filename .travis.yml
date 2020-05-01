@@ -16,6 +16,7 @@ script:
   - chmod +x ./deployment/build-push-docker.sh
 
 deploy:
+  skip_cleanup: true
   provider: script
   script: ./deployment/build-push-docker.sh
   on:
