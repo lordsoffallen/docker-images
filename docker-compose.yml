@@ -10,3 +10,6 @@ services:
   py37-cuda10.2:
     build: ./py37-cuda10.2
     image: ftopal/machine-learning:py37-cuda10.2
+  keplergl:
+    build: ./keplergl
+    image: ftopal/keplergl:latest
