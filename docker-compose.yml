@@ -13,3 +13,9 @@ services:
   keplergl:
     build: ./keplergl
     image: ftopal/keplergl:latest
+  spark-245:
+   build: ./spark
+   image: ftopal/spark:2.4.5
+  spark-latest:
+     build: ./spark
+     image: ftopal/spark:latest

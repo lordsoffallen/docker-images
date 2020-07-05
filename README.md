@@ -3,7 +3,9 @@
 ## `Dockerfile` links
 
 * [`python3.7`, `latest` _(Dockerfile)_](https://github.com/lordsoffallen/docker-images/blob/master/py37/Dockerfile)
-* [`python3.7-cuda10.2` _(Dockerfile)_](https://github.com/lordsoffallen/docker-images/blob/master/p37-cuda10.2/Dockerfile)
+* [`python3.7-cuda10.2` _(Dockerfile)_](https://github.com/lordsoffallen/docker-images/blob/master/py37-cuda10.2/Dockerfile)
+* [`keplergl`, _(Dockerfile)_](https://github.com/lordsoffallen/docker-images/blob/master/keplergl/Dockerfile)
+* [`spark`, `2.4.5`,`latest` _(Dockerfile)_](https://github.com/lordsoffallen/docker-images/blob/master/spark/Dockerfile)
 
 # python-machine-learning
 
@@ -85,9 +87,13 @@ You can see the [compatibility table](https://github.com/NVIDIA/nvidia-docker/wi
 
 ## Release Notes
 
+### 0.2.0 
+
+- Add kepler gl and spark images
+
 ### 0.1.0
 
-* First release, including Python 3.7 and CUDA.
+- First release, including Python 3.7 and CUDA.
 
 ## License
 
