@@ -21,4 +21,4 @@ ENV SPARK_HOME="/usr/local/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}"
 
 WORKDIR /notebooks
 
-CMD ['jupyter', 'notebook', '--ip', '0.0.0.0', '--allow-root']
+CMD ["jupyter", "notebook", "--ip", "0.0.0.0", "--allow-root"]
