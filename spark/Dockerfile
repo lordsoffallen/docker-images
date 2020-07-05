@@ -19,6 +19,14 @@ RUN wget -q ${APACHE_SITE}/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-b
 
 ENV SPARK_HOME="/usr/local/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}"
 
-WORKDIR /notebooks
+WORKDIR /app
+
+RUN pip install jupyterlab
+RUN pip install ipywidgets
+RUN pip install notebook
+RUN pip install seaborn
+RUN pip install plotly
+# > 0.15.0 wont work in spark
+RUN pip install pyarrow==0.13.0  
 
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0", "--allow-root"]
